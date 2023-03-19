@@ -1,0 +1,46 @@
+/*轉圜*/
+#loading {
+    /*設定寬高度*/
+    width: 80px;
+    height: 80px;
+    /*設置邊框的圓角半徑為元素寬度的50%，使loading成為一個圓形*/
+    border-radius: 50%;
+    /*設置6px的寬度及顏色*/
+    border: 6px solid #f3f3f3;
+    /*設置頂部變成不同顏色，以達成轉圈的效果*/
+    border-top: 6px solid #3498db;
+    /*spin定義轉動效果，2是動畫持續時間，infinite是指無限循環*/
+    animation: spin 2s linear infinite;
+    /*使圓圈置中*/
+    margin: 50px auto;
+}
+
+
+
+@keyframes spin {
+    /*不旋轉*/
+    0% { transform: rotate(0deg); }
+    /*轉一圈*/
+    100% { transform: rotate(360deg); }
+}
+
+#message {
+    /*message的字體、大小、位置*/
+    font-family: 微軟正黑體;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+/*以下跟上面一樣*/
+#address{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+#hopeless {
+    font-family: 微軟正黑體;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
